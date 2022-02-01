@@ -49,7 +49,7 @@ ros2 run turtlebot3_teleop teleop_keyboard
 
 ### テストの様子
 
-[![alt設定](http://img.youtube.com/vi/{Tq450KJKtyQ}/0.jpg)](https://www.youtube.com/watch?v={Tq450KJKtyQ})
+https://www.youtube.com/watch?v=Tq450KJKtyQ
 
 ## 参考文献
 - https://emanual.robotis.com/docs/en/platform/turtlebot3/quick-start/
