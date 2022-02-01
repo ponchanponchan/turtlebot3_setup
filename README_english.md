@@ -36,9 +36,19 @@ export TURTLEBOT3_MODEL=waffle_pi
 ```
 
 ## test
+- launch environment
 ```
 ros2 launch turtlebot3_gazebo turtlebot3_house.launch.py
 ```
+- launch teleop node
+```
+ros2 run turtlebot3_teleop teleop_keyboard
+```
+
+If you have no errors, Complete!
+
+### test video
+
 
 ## References
 - https://emanual.robotis.com/docs/en/platform/turtlebot3/quick-start/
