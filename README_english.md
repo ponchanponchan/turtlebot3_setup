@@ -49,7 +49,8 @@ If you have no errors, Complete!
 
 ### test video
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Tq450KJKtyQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+[![alt設定](http://img.youtube.com/vi/{Tq450KJKtyQ}/0.jpg)](https://www.youtube.com/watch?v={Tq450KJKtyQ})
+
 
 ## References
 - https://emanual.robotis.com/docs/en/platform/turtlebot3/quick-start/
