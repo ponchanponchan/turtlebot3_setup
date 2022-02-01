@@ -1,15 +1,15 @@
-# Shell Script for TurtleBot3_setup on foxy (ROS2)
+# TurtleBot3_setup on foxy (ROS2)
 
-## Setting Dependencies for TurtleBot3
-Just Run Below
+## TurtleBot3をインストールするための環境を構築
+以下のコマンドを実行するだけ
 ```bash:
 cd turtlebot3_setup
 chmod +x turtlebot3_setup.sh
 ./turtlebot3_setup.sh
 ```
 
-## Setup TurtleBot3
-- git clone "turtlebot3" to src in your ROS2 workspace
+## TurtleBot3のビルド
+- "turtlebot3"のリポジトリをROS2ワークスペースのsrcフォルダにgit clone
 ```
 cd ~/ros2_ws/src/
 git clone -b foxy-devel https://github.com/ROBOTIS-GIT/turtlebot3_simulations.git
@@ -19,14 +19,15 @@ git clone -b foxy-devel https://github.com/ROBOTIS-GIT/turtlebot3_simulations.gi
 cd ~/ros2_ws && colcon build --symlink-install
 ```
 
-## set type of TurtleBot3
-They have 3 types; burger, waffle, waffle_pi.
-You can select one for simulation by run below.
+## TurtleBot3の選択
+3種; burger, waffle, waffle_pi.
+
+以下のようにして，シミュレーションで用いるタイプを決められる．
 ```
 export TURTLEBOT3_MODEL=waffle_pi
 ```
 
-You can also add them to .bashrc like this.
+以下のように，bashrcファイルに書いておくと便利かもしれない．
 ```
 # select a model of turtlebot3 for simulation
 #export TURTLEBOT3_MODEL=burger
@@ -34,12 +35,12 @@ You can also add them to .bashrc like this.
 export TURTLEBOT3_MODEL=waffle_pi
 ```
 
-## test
+## テスト
 ```
 ros2 launch turtlebot3_gazebo turtlebot3_house.launch.py
 ```
 
-## References
+## 参考文献
 - https://emanual.robotis.com/docs/en/platform/turtlebot3/quick-start/
 
 - https://emanual.robotis.com/docs/en/platform/turtlebot3/simulation/
